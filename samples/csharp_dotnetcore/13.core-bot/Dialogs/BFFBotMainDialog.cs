@@ -75,9 +75,9 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                     var PullRequestDetails = new PullRequestDetails()
                     {
                         // Get destination and origin from the composite entities arrays.
-                        PullRequest = luisResult.GetPullRequestEntities(),
+                        PullRequest = luisResult.GetPullRequestEntities(), // probably need to change this
                         Repository = luisResult.GetRepositoryEntities(),
-                        State = luisResult.GetStateEntities(),
+                        State = luisResult.GetStateEntities()
                     };
 
                     // Run the BookingDialog giving it whatever details we have from the LUIS call, it will fill out the remainder.
